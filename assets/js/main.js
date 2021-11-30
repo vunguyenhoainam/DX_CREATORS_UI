@@ -1,19 +1,23 @@
 var RUN = {
-  // Handle
-  handle: function () {
-    console.log(
-      "%c RUN...",
-      "color: #ff0000; font-size: 16px; font-weight: 700"
-    );
+  // AOS
+  aos: function () {
+    AOS.init({
+      disable: window.innerWidth < 1024,
+    });
   },
 
+  // Initial
   init: function () {
-    RUN.handle();
+    RUN.aos();
   },
 };
 
 $(document).ready(function () {
   setTimeout(function () {
     RUN.init();
+    console.log(
+      "%c Template...",
+      "color: #ff0000; font-size: 16px; font-weight: 700"
+    );
   }, 100);
 });
