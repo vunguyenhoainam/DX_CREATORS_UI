@@ -110,68 +110,123 @@
                         </div>
                     </div>
                     <div class="content user-profile">
+                        <div class="notify-success">プロフィールが編集されました。</div>
                         <h3>プロフィール</h3>
-                        <img src="./assets/images/image_user_1.png" alt="#" />
                         <form class="list-input">
-                            <div class="input-group mb-3">
+                            <div class="input-group align-items-normal mb-4">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">　名前</span>
+                                    <span class="input-group-text required">　名前</span>
                                 </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="name"
-                                    aria-describedby="basic-addon1"
-                                />
+                                <div class="form-edit form-control">
+                                    <div>
+                                        <span>姓</span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                    <div>
+                                        <span>名</span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-4">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">　名前（ふりがな）</span>
+                                    <span class="input-group-text required">　名前</span>
                                 </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="name-furigana"
-                                    aria-describedby="basic-addon1"
-                                />
+                                <div class="form-edit form-control">
+                                    <div>
+                                        <span>せい</span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                    <div>
+                                        <span>めい</span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-4">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">　生年月日</span>
                                 </div>
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    class="form-control px-4"
                                     aria-label="name-furigana"
                                     aria-describedby="basic-addon1"
                                 />
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group flex-nowrap mb-4">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">　メールアドレス</span>
                                 </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="name-furigana"
-                                    aria-describedby="basic-addon1"
-                                />
+                                <p class="d-flex align-items-center w-100 px-4 form-control border text-inline">
+                                    yamada-taro@hogehoge.jp
+                                </p>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-4">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">　電話番号</span>
                                 </div>
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    class="form-control px-4"
                                     aria-label="name-furigana"
                                     aria-describedby="basic-addon1"
                                 />
                             </div>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">　電話番号</span>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control px-4"
+                                    aria-label="name-furigana"
+                                    aria-describedby="basic-addon1"
+                                />
+                            </div>
+                            <div class="h-240 input-group flex-nowrap mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="h-240 input-group-text">　プロフィール写真</span>
+                                </div>
+                                <div class="w-100 h-240 px-4 form-control border text-inline">
+                                    <div class="form-upload-image">
+                                        <img class="image-preview" src="./assets/images/image_user_1.png" class="preview1" />
+                                        <div class="btn-control">
+                                            <span class="btn_upload">
+                                                <input type="file" id="imag" title="" />
+                                                画像アップロード
+                                            </span>
+                                            <div class="btn-delete-image">
+                                                <img src="./assets/images/icon_trash.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                         <div class="list-btn">
-                            <a href="#">戻る</a>
-                            <a href="#">編集</a>
+                            <button class="btn-child">戻る</button>
+                            <button class="btn-child">編集</button>
                         </div>
                     </div>
                     <!-- Modal Logout -->
