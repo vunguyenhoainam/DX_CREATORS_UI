@@ -709,6 +709,7 @@ input {
 .main .container.profile .content.user-profile form .input-group .form-upload-image > img {
   width: 18rem;
   height: 18rem;
+  border-radius: 50%;
   object-fit: cover;
 }
 .main .container.profile .content.user-profile form .input-group .form-upload-image .btn-control {
