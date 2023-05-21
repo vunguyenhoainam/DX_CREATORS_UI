@@ -13,6 +13,13 @@ var RUN = {
         });
     },
 
+    // Show SideBar SP
+    showSidebar: () => {
+        $(".header-button-show-menu-sp").click(function(){
+            $(".sidebar").toggle();
+          });
+    },
+
     // Upload Image
     uploadImage: () => {
         const readURL = (input, imgControlName) => {
@@ -44,6 +51,7 @@ var RUN = {
     init: () => {
         RUN.showMenu();
         RUN.showModalLogout();
+        RUN.showSidebar();
         RUN.uploadImage();
     },
 };

@@ -1,5 +1,6 @@
-input {
+input, textarea {
     font-size: 1.4rem !important;
+    color: $cl-gray !important;
 }
 .text-inline {
     overflow: hidden;
@@ -11,12 +12,6 @@ input {
     height: 24rem !important;
 }
 
-.file-field input[type=file]  {
-    text-indent: -999px;
+.bg-rgb-btn {
+    background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
-
-.file-field .btn, .file-field .btn-large {
-    position: relative;
-    overflow: hidden;
-}
-  
